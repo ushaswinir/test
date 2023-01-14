@@ -240,3 +240,32 @@ git init
 cd ..
 git init
 sudo su
+gh auth login
+echo "# test" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/ushaswinir/test.git
+git push -u origin main
+git init
+git add .
+git commit -m "waste"
+git push -u origin main
+git branch dev
+git branch -a
+git checkout dev
+git branch -a
+vi secondnew
+git status
+git add .
+git commit -m "sandbox"
+git push -u origin dev
+ls
+git status
+git add .
+git commit -m "strange"
+git push -u origin dev
+git branch
+gh auth login
+git push -u origin dev
